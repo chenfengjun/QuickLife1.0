@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/detail_bg"
+    android:padding="15dp" >
+
+    <EditText
+        android:id="@+id/pop_bindphone_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="输入手机" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/pop_bindphone_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pop_bindphone_et"
+        android:layout_below="@+id/pop_bindphone_et"
+        android:background="@drawable/exit_btn_selector"
+        android:padding="10dp"
+        android:text="设置"
+        android:textColor="@color/color_list_tab_txt" />
+
+    <Button
+        android:id="@+id/pop_bindphone_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pop_bindphone_btn"
+        android:layout_alignBottom="@+id/pop_bindphone_btn"
+        android:layout_alignRight="@+id/pop_bindphone_et"
+        android:background="@drawable/exit_btn_selector"
+        android:padding="10dp"
+        android:text="取消"
+        android:textColor="@color/color_list_tab_txt" />
+
+</RelativeLayout>

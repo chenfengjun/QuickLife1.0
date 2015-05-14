@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_background_texture" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/echo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_left_arrow_in_dealmap" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息处理"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_black" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/echo_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/echo_back_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:cacheColorHint="#00000000"
+        android:padding="5dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/echo_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/exit_btn_selector"
+        android:padding="10dp"
+        android:text="返回"
+        android:textColor="@color/color_list_tab_txt" />
+
+</RelativeLayout>

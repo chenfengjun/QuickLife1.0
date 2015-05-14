@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/message_bubble_out_bg_p"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/checkin_comment_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/list_text_selector" />
+
+        <TextView
+            android:id="@+id/checkin_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkin_comment_userName"
+            android:layout_alignBottom="@+id/checkin_comment_userName"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/list_text_selector" />
+
+        <TextView
+            android:id="@+id/checkin_comment_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkin_comment_userName"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:text="该用户什么都没说"
+            android:textColor="@color/list_text_selector" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/div_transparent"
+        android:orientation="vertical" />
+
+</LinearLayout>

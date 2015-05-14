@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg12"
+    android:padding="12dp" >
+
+    <ImageView
+        android:id="@+id/contactlist_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/action_add_to_list_normal" />
+
+    <TextView
+        android:id="@+id/contactlist_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactlist_imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/contactlist_imageView1"
+        android:gravity="center_vertical"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/list_text_selector" />
+
+</RelativeLayout>

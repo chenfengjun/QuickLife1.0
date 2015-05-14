@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/message_bubble_in_bg_p"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <EditText
+        android:id="@+id/pop_checkin_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:gravity="center_vertical|top"
+        android:hint="亲，在这里感觉如何？说两句吧"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp" >
+
+        <Button
+            android:id="@+id/pop_checkin_btn1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/exit_btn_selector"
+            android:text="签到"
+            android:textColor="@color/color_list_tab_txt" />
+
+        <Button
+            android:id="@+id/pop_checkin_btn2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/exit_btn_selector"
+            android:text="返回"
+            android:textColor="@color/color_list_tab_txt" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/pop_checkin_ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:progress="5" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pop_checkin_et"
+        android:layout_marginTop="10dp"
+        android:text="评分："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

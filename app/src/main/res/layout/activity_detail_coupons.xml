@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_background_texture" >
+
+    <RelativeLayout
+        android:id="@+id/detail_coupons_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/detail_coupons_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_left_arrow_in_dealmap" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="优惠详情"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_black" />
+
+        <Button
+            android:id="@+id/detail_coupons_title_houhou_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/detail_coupons_title_back"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/detail_coupons_title_back"
+            android:background="@drawable/exit_btn_selector"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="吼吼"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_list_tab_txt" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/detail_coupons_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail_coupons_btn_use"
+        android:layout_below="@+id/detail_coupons_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/detail_coupons_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/img_hotapp_default" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_bg12"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/detail_coupons_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="5dp"
+                    android:text="优惠名称"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_black" />
+
+                <TextView
+                    android:id="@+id/detail_coupons_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_coupons_name"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:text="TextView"
+                    android:textColor="@color/text_black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_coupons_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="适用商户"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_bg12" >
+
+                <TextView
+                    android:id="@+id/detail_coupons_bussName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:text="商户名称"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_black" />
+
+                <TextView
+                    android:id="@+id/detail_coupons_bussDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_coupons_bussName"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:text="商户地址"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/detail_coupons_userscoreTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="10dp"
+                    android:text="用户评分"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_black" />
+
+                <RatingBar
+                    android:id="@+id/detail_coupons_ratingBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_coupons_userscoreTv"
+                    android:isIndicator="true"
+                    android:saveEnabled="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_coupons_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="用户评论："
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_black" />
+
+            <LinearLayout
+                android:id="@+id/detail_coupons_containLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="暂无用户评论"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/detail_coupons_btn_use"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/exit_btn_selector"
+        android:padding="10dp"
+        android:text="使用优惠"
+        android:textColor="@color/color_list_tab_txt" />
+
+</RelativeLayout>

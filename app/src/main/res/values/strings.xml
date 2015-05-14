@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuickLife</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_action">动态</string>
+    <string name="title_conpound">优惠</string>
+    <string name="title_checkin">签到</string>
+    <string name="title_my">我的信息</string>
+    <string name="coupon_susun">Susan说</string>
+    <string name="coupon_hot">热门</string>
+    <string name="action_myaction">我的动态</string>
+    <string name="action_friendaction">好友动态</string>
+    <string name="coupon_tixing">提醒</string>
+    <string name="myinfo_login">还未登录，点击左侧头像登录</string>
+    <string name="login_name">帐号:</string>
+    <string name="login_pwd">密码:</string>
+    <string name="login_loginBtn">登录</string>
+    <string name="detail_info">详细信息</string>
+    <string name="login_regBtn">注册</string>
+    <string name="login_name_hint">用户名或手机号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="dianping">点评</string>
+    <string name="fenxiang">分享</string>
+    <string name="myfriend">好友列表</string>
+    <string name="mycoupons">优惠记录</string>
+    <string name="mybuss">商户收藏</string>
+    <string name="name">真实姓名</string>
+    <string name="phone">绑定手机</string>
+    <string name="sex">性别</string>
+
+</resources>

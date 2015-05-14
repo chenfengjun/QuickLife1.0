@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <ListView
+        android:id="@+id/layout_action_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/div_transparent"
+        android:dividerHeight="15dp"
+        android:listSelector="@drawable/list_bg_selector" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/layout_action_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="亲！你还没登录哦！"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_list_tab_txt"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

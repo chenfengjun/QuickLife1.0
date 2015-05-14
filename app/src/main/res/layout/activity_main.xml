@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_background_texture"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/main_lineBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/qz_bg_toolbar_new"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_lineBtn"
+        android:layout_alignParentTop="true" >
+    </FrameLayout>
+
+</RelativeLayout>

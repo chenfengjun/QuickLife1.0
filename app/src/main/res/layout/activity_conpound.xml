@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/coupons_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/main_conpound_title_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/exit_btn_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="设置"
+            android:textColor="@color/color_list_tab_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/main_conpound_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_conpound"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_coupons_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coupons_title"
+        android:background="@drawable/dialer_bottom_bar_bg" >
+
+        <LinearLayout
+            android:id="@+id/coupons_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/main_coupons_tv1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/coupon_hot"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/child_title_white" />
+
+            <TextView
+                android:id="@+id/main_coupons_tv2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/coupon_susun"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:id="@+id/main_coupons_tv3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/coupon_tixing"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/coupons_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coupons_line"
+            android:src="@drawable/com_tenpay_android_current_bank_flag" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/coupons_vPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_coupons_rel"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

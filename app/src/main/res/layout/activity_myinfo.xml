@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/myinfo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/main_myinfo_title_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/exit_btn_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="设置"
+            android:textColor="@color/color_list_tab_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/main_myinfo_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_my"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/main_myinfo_title_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/main_myinfo_title_tv"
+            android:background="@drawable/exit_btn_selector"
+            android:padding="10dp"
+            android:text="注册"
+            android:textColor="@color/color_list_tab_txt"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myinfo_title"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/myinfo_main_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/myinfo_headList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myinfo_item_bg_selector"
+                android:clickable="true"
+                android:paddingBottom="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/myinfo_loginhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/icon_avatar_default" />
+
+                <TextView
+                    android:id="@+id/myinfo_nametv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/myinfo_loginhead"
+                    android:text="@string/myinfo_login"
+                    android:textColor="@color/list_text_selector" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_friend_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myinfo_item_bg_selector"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/myfriend"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/myinfo_tv_friendNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(0)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_buss_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myinfo_item_bg_selector"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/mybuss"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/myinfo_tv_bussNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(0)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_share_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myinfo_item_bg_selector"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="分享记录"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/myinfo_tv_shareNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(0)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/list_text_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_checkin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myinfo_item_bg_selector"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="签到记录"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/myinfo_checkinNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(0)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/list_text_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/myinfo_item_bg_selector"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="评论记录"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/myinfo_commentNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(0)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/list_text_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_coupons_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myinfo_item_bg_selector"
+                android:clickable="true"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/mycoupons"
+                    android:textColor="@color/list_text_selector"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/myinfo_couponsNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(0)"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/list_text_selector" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

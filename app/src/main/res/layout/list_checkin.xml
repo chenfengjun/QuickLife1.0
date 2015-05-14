@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg12"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/list_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/list_text_selector" />
+
+    <TextView
+        android:id="@+id/list_tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/list_tv_name"
+        android:text="TextView"
+        android:textColor="@color/list_text_selector" />
+
+    <TextView
+        android:id="@+id/list_tv_distans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/list_tv_name"
+        android:text="TextView"
+        android:textColor="@color/list_text_selector" />
+
+    <TextView
+        android:id="@+id/list_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_tv_name"
+        android:layout_toLeftOf="@+id/list_tv_distans"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/list_text_selector" />
+
+</RelativeLayout>

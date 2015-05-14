@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/message_bubble_in_bg_p"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/list_friend_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_avatar_default" />
+
+    <ImageView
+        android:id="@+id/list_friend_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_friend_image"
+        android:layout_alignRight="@+id/list_friend_name"
+        android:src="@drawable/icon_sex_female_normal" />
+
+    <TextView
+        android:id="@+id/list_friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/list_text_selector" />
+
+    <TextView
+        android:id="@+id/list_friend_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_friend_sex"
+        android:layout_alignParentRight="true"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/list_text_selector" />
+
+</RelativeLayout>

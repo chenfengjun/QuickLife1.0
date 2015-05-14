@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="CommitPrefEdits" severity="ignore" />
+    <issue id="CutPasteId" severity="ignore" />
+    <issue id="DrawAllocation" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="HardcodedText">
+        <ignore path="res/layout/layout_menu.xml" />
+    </issue>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/org/gread/quicklife/activity/CheckinDetailActivity.java" />
+        <ignore path="src/org/gread/quicklife/activity/CouponDetailActivity.java" />
+    </issue>
+    <issue id="ShowToast" severity="ignore" />
+    <issue id="SimpleDateFormat">
+        <ignore path="src/org/gread/quicklife/activity/CheckinDetailActivity.java" />
+        <ignore path="src/org/great/quicklife/activity/CheckinDetailActivity.java" />
+        <ignore path="src/org/great/quicklife/util/TimeFormat.java" />
+    </issue>
+</lint>
